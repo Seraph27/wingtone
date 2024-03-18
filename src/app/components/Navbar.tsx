@@ -21,7 +21,7 @@ const siteMetadata = {
 const Navbar = () => {
   return (
     <div className="w-full">
-        <header className="flex justify-between space-between mx-0 max-h-24 inset-0 ">  
+        <header className="flex justify-between space-between mx-0 max-h-24 inset-0">  
             <div className="">
                 <Image
                     src={Logo}
