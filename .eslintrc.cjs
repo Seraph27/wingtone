@@ -13,6 +13,7 @@ const config = {
     "plugin:@typescript-eslint/stylistic-type-checked"
   ],
   "rules": {
+    "react/prop-types": "off",
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/consistent-type-imports": [
@@ -41,16 +42,7 @@ const config = {
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "rules": {
-        "react/prop-types": [2, {
-          "ignore": ["className", 
-                            // "variant", 
-                            // "size",
-                            // ...
-                           ]
-        }]
-      }
+      "parser": "@typescript-eslint/parser" 
     }
   ] 
 }
