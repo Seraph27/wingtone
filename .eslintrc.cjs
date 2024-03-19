@@ -13,7 +13,8 @@ const config = {
     "plugin:@typescript-eslint/stylistic-type-checked"
   ],
   "rules": {
-    "react/prop-types": [2, { "ignore": ["className"] }],
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "react/prop-types": "off",
     "@typescript-eslint/array-type": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
     "@typescript-eslint/consistent-type-imports": [
