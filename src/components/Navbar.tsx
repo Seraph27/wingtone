@@ -10,7 +10,6 @@ const siteMetadata = {
     headerTitle: 'wingtone',
     description: 'wingtone',
     language: 'en-us',
-    theme: 'dark', // system, dark or light
     siteUrl: '',
     siteRepo: '',
     siteLogo: 'public/images/icon.png',
