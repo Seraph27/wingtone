@@ -37,6 +37,21 @@ const config = {
         }
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "react/prop-types": [2, {
+          "ignore": ["className", 
+                            // "variant", 
+                            // "size",
+                            // ...
+                           ]
+        }]
+      }
+    }
+  ] 
 }
 module.exports = config;
