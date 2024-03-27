@@ -13,6 +13,7 @@ const config = {
     "plugin:@typescript-eslint/stylistic-type-checked"
   ],
   "rules": {
+    "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "react/prop-types": "off",
     "@typescript-eslint/array-type": "off",
