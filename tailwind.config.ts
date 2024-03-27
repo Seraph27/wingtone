@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        links: "hsl(var(--links))",
         seraph: "hsl(var(--seraph))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -1,5 +1,5 @@
 import "~/styles/globals.css";
-
+import { ThemeProvider } from "~/components/ThemeProvider"
 import { Inter } from "next/font/google";
 
 import { TRPCReactProvider } from "~/trpc/react";
@@ -23,7 +23,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <TRPCReactProvider>
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="light"
+              enableSystem
+              disableTransitionOnChange
+            >
+              {children}
+          </ThemeProvider>
+        </TRPCReactProvider>
       </body>
     </html>
   );
